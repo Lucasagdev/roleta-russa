@@ -1,14 +1,19 @@
-function roletaRussa() {
-    const numeroDeCamaras = 6;
-    const posicaoDaBala = Math.floor(Math.random() * numeroDeCamaras) + 1;
+// Sorteia a posição da bala
+const numeroDeCamaras = 6;
+const posicaoDaBala = Math.floor(Math.random() * numeroDeCamaras) + 1;
 
-    const tentativa = prompt(`Escolha um número entre 1 e ${numeroDeCamaras}:`);
-
-    if (parseInt(tentativa) === posicaoDaBala) {
-        alert("Bang! Você perdeu!");
+// Função que executa ao clicar em um botão
+function puxarGatilho(escolha) {
+    const resultadoDiv = document.getElementById("result");
+    if (escolha === posicaoDaBala) {
+        resultadoDiv.innerHTML = "💥 Bang! Você perdeu!";
+        resultadoDiv.className = "result danger";
     } else {
-        alert("Clique! Você está seguro... desta vez.");
+        resultadoDiv.innerHTML = "🔫 Clique! Você está seguro.";
+        resultadoDiv.className = "result safe";
     }
 }
 
-roletaRussa();
+function tentarNovamente() {
+    window.location.reload()
+}
