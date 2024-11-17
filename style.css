@@ -8,6 +8,16 @@ body {
     margin-top: 50px;
 }
 
+.container button {
+    background-color: rgb(125, 109, 214);
+    transition: 0.5s;
+}
+
+.container button:hover {
+    background-color: rgb(109, 172, 214);
+    transform: scale(0.85);
+}
+
 .result {
     margin-top: 20px;
     font-size: 1.5em;
