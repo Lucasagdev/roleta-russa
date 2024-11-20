@@ -4,12 +4,25 @@ body {
     padding: 20px;
 }
 
+.main {
+    background-color: rgb(107, 47, 204);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .container {
     margin-top: 50px;
 }
 
 .container button {
-    background-color: rgb(125, 109, 214);
+    background-color: rgb(66, 41, 209);
+
+    border-radius: 10px;
+    border: none;
     transition: 0.5s;
 }
 
@@ -25,7 +38,7 @@ body {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 20px 25px;
     margin: 5px;
     font-size: 1em;
     cursor: pointer;
@@ -33,7 +46,12 @@ button {
 }
 
 .tentar-novamente {
+    background-color: rgb(87, 4, 155);
+    color: white;
     margin-top: 50px;
+    border-radius: 10px;
+    border: none;
+
 }
 
 .safe {
