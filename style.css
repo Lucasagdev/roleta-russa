@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .main {
@@ -23,12 +25,12 @@ body {
 
     border-radius: 10px;
     border: none;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .container button:hover {
     background-color: rgb(109, 172, 214);
-    transform: scale(0.85);
+    transform: scale(0.9);
 }
 
 .result {
@@ -51,11 +53,17 @@ button {
     margin-top: 50px;
     border-radius: 10px;
     border: none;
+    transition: 0.8s;
+}
 
+.tentar-novamente:hover {
+    background-color: #ccc;
+    color: black;
 }
 
 .safe {
     color: green;
+    font-weight: 600;
 }
 
 .danger {
