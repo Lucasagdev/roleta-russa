@@ -1,10 +1,13 @@
-// Sorteia a posição da bala
 const numeroDeCamaras = 6;
 const posicaoDaBala = Math.floor(Math.random() * numeroDeCamaras) + 1;
 
-// Função que executa ao clicar em um botão
-function puxarGatilho(escolha) {
+function puxarGatilho(escolha, event) {
     const resultadoDiv = document.getElementById("result");
+    const button = event.target;
+
+    button.classList.add("selected");
+
+    // Exibe o resultado
     if (escolha === posicaoDaBala) {
         resultadoDiv.innerHTML = "💥 Bang! Você perdeu!";
         resultadoDiv.className = "result danger";
@@ -13,6 +16,7 @@ function puxarGatilho(escolha) {
         resultadoDiv.className = "result safe";
     }
 }
+
 
 function tentarNovamente() {
     window.location.reload()

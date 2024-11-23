@@ -11,13 +11,12 @@
         <h1>Roleta Russa</h1>
         <p>Escolha uma posição de 1 a 6 e veja o que acontece!</p>
         <div class="container">
-            <!-- Botões para selecionar uma posição -->
-            <button onclick="puxarGatilho(1)">1</button>
-            <button onclick="puxarGatilho(2)">2</button>
-            <button onclick="puxarGatilho(3)">3</button>
-            <button onclick="puxarGatilho(4)">4</button>
-            <button onclick="puxarGatilho(5)">5</button>
-            <button onclick="puxarGatilho(6)">6</button>
+            <button onclick="puxarGatilho(1, event)">1</button>
+            <button onclick="puxarGatilho(2, event)">2</button>
+            <button onclick="puxarGatilho(3, event)">3</button>
+            <button onclick="puxarGatilho(4, event)">4</button>
+            <button onclick="puxarGatilho(5, event)">5</button>
+            <button onclick="puxarGatilho(6, event)">6</button>
         </div>
         <div class="result" id="result"></div>
 
