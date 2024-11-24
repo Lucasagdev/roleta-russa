@@ -22,15 +22,22 @@ body {
 }
 
 .container button {
-    
     border-radius: 10px;
     border: none;
     transition: 0.3s;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
 .container button:hover {
     background-color: rgb(109, 172, 214);
+    color: white;
     transform: scale(0.9);
+    box-shadow: #333;
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
 }
 
 .result {

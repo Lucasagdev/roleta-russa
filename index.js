@@ -6,6 +6,7 @@ function puxarGatilho(escolha, event) {
     const button = event.target;
 
     button.classList.add("selected");
+    button.classList.add("fundo-botao");
 
     // Exibe o resultado
     if (escolha === posicaoDaBala) {
