@@ -1,6 +1,9 @@
+* {
+    font-family: 'Roboto Mono';
+}
+
 body {
     background-color: rgb(22, 8, 54);
-    font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
     display: flex;
@@ -17,6 +20,10 @@ body {
     border-radius: 10px;
 }
 
+.main p {
+    font-weight: 800;
+}
+
 .container {
     margin-top: 50px;
 }
@@ -31,7 +38,7 @@ body {
 }
 
 .container button:hover {
-    background-color: rgb(109, 172, 214);
+    background-color: rgb(167, 109, 214);
     color: white;
     transform: scale(0.9);
     box-shadow: #333;
@@ -54,22 +61,22 @@ button {
 }
 
 .selected {
-    background-color: rgb(109, 172, 214);
+    background-color: rgb(167, 109, 214);
     color: rgb(255, 255, 255);
 }
 
 .tentar-novamente {
-    background-color: rgb(87, 4, 155);
+    background-color: rgb(104, 2, 187);
     color: white;
     margin-top: 50px;
     border-radius: 10px;
     border: none;
-    transition: 0.8s;
+    transition: 0.3s;
 }
 
 .tentar-novamente:hover {
-    background-color: #ccc;
-    color: black;
+    background-color: rgb(76, 2, 138);
+    transform: scale(0.98);
 }
 
 .safe {
