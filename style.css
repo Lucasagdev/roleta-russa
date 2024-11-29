@@ -11,13 +11,14 @@ body {
 }
 
 .main {
-    background-color: #7A306C;
+    background-color: hsl(266, 90%, 23%);
     color: white;
     display: flex;
     flex-direction: column;
     width: 500px;
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid rgb(112, 54, 206);
 }
 
 .main p {
