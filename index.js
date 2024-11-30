@@ -18,7 +18,6 @@ function puxarGatilho(escolha, event) {
     }
 }
 
-
 function tentarNovamente() {
     window.location.reload()
 }
