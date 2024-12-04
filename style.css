@@ -11,19 +11,31 @@ body {
 }
 
 .main {
+    position: relative;
     background-color: hsl(266, 90%, 23%);
     color: white;
     display: flex;
     flex-direction: column;
     width: 500px;
     padding: 10px;
-    border: 3px solid transparent;
-    border-image: linear-gradient(to bottom, #774af3, #2e0f61);
-    border-image-slice: 1;
+    border-radius: 15px;
     -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
 }
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(to bottom right, #774af3, #080014);
+    border-radius: 15px;
+    z-index: -1;
+}
+
 
 .main p {
     font-weight: 800;
