@@ -36,9 +36,9 @@ body {
     z-index: -1;
 }
 
-
 .main p {
     font-weight: 800;
+    font-size: 20px;
 }
 
 .container {
