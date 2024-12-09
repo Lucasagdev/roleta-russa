@@ -8,7 +8,6 @@ function puxarGatilho(escolha, event) {
     button.classList.add("selected");
     button.classList.add("fundo-botao");
 
-    // Exibe o resultado
     if (escolha === posicaoDaBala) {
         resultadoDiv.innerHTML = "💥 Bang! Você perdeu!";
         resultadoDiv.className = "result danger";
