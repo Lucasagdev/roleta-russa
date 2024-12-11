@@ -8,11 +8,13 @@ body {
     padding: 20px;
     display: flex;
     justify-content: center;
+    background-image: url(/fundo-tambor.png);
+    background-size: cover;
 }
 
 .main {
     position: relative;
-    background-color: hsl(266, 90%, 23%);
+    background-color: hsl(266, 73%, 22%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -31,7 +33,7 @@ body {
     left: -3px;
     right: -3px;
     bottom: -3px;
-    background: linear-gradient(to right, #774af3, #080014);
+    background: linear-gradient(to right, #210a4d, #080014);
     border-radius: 15px;
     z-index: -1;
 }
